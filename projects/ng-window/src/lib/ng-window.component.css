@@ -1,0 +1,58 @@
+.draggable-box {
+  position: absolute;
+  background: #c4c3c3;
+  cursor: grab;
+  width: 200px;
+  height: 25px;
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.draggable-box label {
+  position: absolute;
+  left: 30%;
+  top: 5px;
+  cursor: grab;
+}
+.draggable-box p {
+  text-align: center;
+  margin: auto;
+  display: inline;
+  margin-top: 3px;
+  border-radius: 5px;
+}
+.btn {
+  font-size: small;
+  text-align: center;
+  float: right;
+  width: 20px;
+  cursor: pointer;
+  border-style: solid;
+  border-color: rgb(133, 139, 139);
+  border-width: 1px;
+}
+.btn:hover {
+  border-style: outset;
+  box-shadow: 2px 2px 5px #7e7c7c;
+}
+.resize {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  width: 10px;
+  height: 5px;
+  cursor: se-resize;
+}
+.window {
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 200px;
+  display: block;
+  border-radius: 8px;
+}
+.content {
+  margin-top: 30px;
+  width: 200px;
+}

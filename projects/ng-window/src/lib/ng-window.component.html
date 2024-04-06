@@ -1,0 +1,20 @@
+<div class="window" #windowEl title="resize using corner" style="{{ content }}">
+  <div class="draggable-box" #draggableEl style="{{ titleBar }}">
+    <label style="{{ titleClr }}">{{ title }}</label>
+    <p class="btn" (click)="close()" style="{{ btn1 }}">X</p>
+    <p class="btn" (click)="max()" style="margin-right:5px;" style="{{ btn2 }}">
+      o
+    </p>
+    <p class="btn" (click)="min()" style="margin-right:5px;" style="{{ btn3 }}">
+      -
+    </p>
+  </div>
+
+  <div class="content" #contentEl>
+    <p>
+      <ng-content></ng-content>
+    </p>
+  </div>
+
+  <div class="resize" #resizeEl></div>
+</div>
